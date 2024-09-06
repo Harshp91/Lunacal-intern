@@ -33,12 +33,9 @@ const Home = () => {
           </div>
           <div className="py-7 px-4 text-stone-900 font-jakarta font-semibold">
             <p>
-              Hello! I m Dave, your sales rep here from Salesforce. I've been
-              working at this awesome company for 3 years now. I was born and
-              raised in Albany, NY& have been living in Santa Carla for the past
-              10 years my wife Tiffany and my 4 year old twin daughters-Emma and
-              Ella. Both of them are just starting school, so my calender is
-              usually blocked between 9-10 AM. This is a...
+              Hi, I'm a Computer Science and Engineering (CSE) student with a strong passion for technology and problem-solving.
+              Throughout my studies, I've developed a solid foundation in programming languages like Java, Python, and C++, as well as experience with web development frameworks and databases. I'm particularly interested in areas like software development, algorithms, and data structures, and have worked on a few projects, including building web apps and implementing machine learning models.
+              Aside from technical skills, I'm always looking to improve my soft skills like teamwork, communication, and time management. I'm eager to keep learning, work on real-world problems, and contribute to impactful projects in the tech industry.
             </p>
           </div>
         </div>

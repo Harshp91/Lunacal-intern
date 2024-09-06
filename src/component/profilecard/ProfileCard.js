@@ -58,9 +58,8 @@ function ProfileCard() {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`py-1 px-4 rounded-full ${
-                    activeTab === tab ? "bg-gray-700" : "bg-transparent"
-                  } text-white focus:outline-none hover:shadow-lg hover:shadow-gray-800 transition-shadow`}
+                  className={`py-1 px-4 rounded-full ${activeTab === tab ? "bg-gray-700" : "bg-transparent"
+                    } text-white focus:outline-none hover:shadow-lg hover:shadow-gray-800 transition-shadow`}
                 >
                   {tab}
                 </button>
@@ -77,27 +76,19 @@ function ProfileCard() {
           >
             {activeTab === "About Me" && (
               <p>
-                Hello! I’m Dave, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now.
-                <br />
-                I was born and raised in Albany, NY & have been living in Santa Carla for the past 10 years with my wife Tiffany and my 4-year-old twin daughters - Emma and Ella. Both of them are just starting school, so my calendar is usually blocked between 9-10 AM. This is a...
+                Hi, I'm a Computer Science and Engineering (CSE) student with a strong passion for technology and problem-solving.
+              Throughout my studies, I've developed a solid foundation in programming languages like Java, Python, and C++, as well as experience with web development frameworks and databases. I'm particularly interested in areas like software development, algorithms, and data structures, and have worked on a few projects, including building web apps and implementing machine learning models.
+              Aside from technical skills, I'm always looking to improve my soft skills like teamwork, communication, and time management. I'm eager to keep learning, work on real-world problems, and contribute to impactful projects in the tech industry.
               </p>
             )}
             {activeTab === "Experiences" && (
               <p>Hello,
-             <div>
-              I am DIVYANSH PANDEY, currently in my final year at IET Lucknow in the Computer Science and Engineering Branch.
-              Here are some of my Experiences</div>
-              <div>
-              1 REMOTASK- AI trainer
-               Reviewing prompts related to languages like Python, JS, CPP, etc., modifying these responses, mentioning issues,
-              rating model responses, and improving them are some of the types of work I did in my work duration</div>
-              <div>
-              2 Freelancing
-              Made the complete UI/Front-end of the website, and also improved the existing website code in my work period</div>
-              <div>
-              3 Internships assignment
-              --- Have designed complete responsive website from scratch which even involves designing UI first and then code it of various assignment I got through Internshala.
-              --- GitHub link:- https://github.com/divyanshiet </div></p>
+                <div>
+                  During my time as a CSE student, I’ve had the chance to work on several hands-on projects and internships that have helped shape my technical skills. One of the key experiences was developing a web application using the MERN stack (MongoDB, Express, React, Node.js). I worked on both frontend and backend, implementing user authentication and a responsive UI.
+
+                  Additionally, I completed an internship where I worked on optimizing algorithms for data processing in a large-scale system. This involved working with Python and exploring machine learning models to improve prediction accuracy.
+
+                  I’ve also collaborated in a team setting on a capstone project, where we developed a recommendation system using collaborative filtering techniques. These experiences taught me how to apply my academic knowledge in real-world scenarios, work with version control (Git), and communicate effectively within a team.</div></p>
             )}
             {activeTab === "Recommended" && (
               <p>I recommend checking out these resources...</p>
@@ -130,20 +121,18 @@ function ProfileCard() {
               </div>
               <button
                 onClick={handleLeftClick}
-                className={`text-white p-2 rounded-full bg-gray-600/70 focus:outline-none ${
-                  visibleImages[0] === 0 ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+                className={`text-white p-2 rounded-full bg-gray-600/70 focus:outline-none ${visibleImages[0] === 0 ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
                 disabled={visibleImages[0] === 0}
               >
                 <BsArrowLeftCircle size={20} />
               </button>
               <button
                 onClick={handleRightClick}
-                className={`text-white p-2 rounded-full bg-gray-600/70 focus:outline-none ${
-                  visibleImages[3] === images.length - 1
+                className={`text-white p-2 rounded-full bg-gray-600/70 focus:outline-none ${visibleImages[3] === images.length - 1
                     ? "opacity-50 cursor-not-allowed"
                     : ""
-                }`}
+                  }`}
                 disabled={visibleImages[3] === images.length - 1}
               >
                 <BsArrowRightCircle size={20} />
